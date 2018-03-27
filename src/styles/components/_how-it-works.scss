@@ -1,38 +1,40 @@
 .How-it-works {
-  padding: 40px 0;
-  width: 70%;
-  margin: 0 auto;
-  align-items: center;
-  &-test{
-    margin-bottom: 40px;
-    @include for-size(desktop-up) {
-      margin: auto;
-    }
-  }
-  &-title{
-    color: $mainColor;
-    margin-bottom: 40px;
-    font-size: 16px;
-  }
-  &-paragraphe {
-    font-size: 14px;
-  }
-  &-items {
+    padding: 50px 0;
     width: 100%;
     margin: 0 auto;
-    @include for-size(desktop-up) {
-      width: 50%;
+    align-items: center;
+    &-test {
+        margin-bottom: 40px;
+        @include for-size(desktop-up) {
+            margin: auto;
+        }
     }
-    &-flex{
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      &-img {
+    &-title {
+        color: $mainColor;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &-subtitle {
+        font-size: 16px;
+    }
+    &-content {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 20px;
+        @include for-size(desktop-up) {
+            width: 50%;
+        }
+    }
+    &-contentAssets {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &-img {
         margin-right: 2rem;
-      }
     }
     &-blue {
-      color: $mainColor;
+        color: $mainColor;
     }
-  }
 }
